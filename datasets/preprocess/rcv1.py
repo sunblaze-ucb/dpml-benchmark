@@ -77,7 +77,6 @@ def preprocess(cache_location, output_location):
     labels = labels[index]
 
     classify(features, labels)
-    classify(features, labels)
     
     # shrink the dataset
     print("Shrinking to size")
