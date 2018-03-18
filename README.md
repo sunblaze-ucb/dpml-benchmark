@@ -3,7 +3,7 @@
 A benchmark and implementations for differentially private convex optimization algorithms.
 
 The algorithms implemented in this repository are as follows:
-1. Approximate Minia Perturbation - An original algorithm proposed in our paper.
+1. Approximate Minima Perturbation - An original algorithm proposed in our paper.
 2. Hyperparameter-free Approximate Minima Perturbation - Hyperparameter-free version of 1.
 3. Private Stochastic Gradient Descent in [scs13](http://ai2-s2-pdfs.s3.amazonaws.com/6154/ce8c02375184f7928e41c4fae532500f7175.pdf)
 4. Private Convex Perturbation-Based Stochastic Gradient Descent in [wlk17](https://arxiv.org/pdf/1606.04722.pdf)
@@ -88,8 +88,8 @@ python gridsearch.py [ALG_NAME] [DATASET_NAME] [MODEL_NAME]
 3. Available ALG_NAME
 ```
 ALL: all the algorithms
-AMP: Flexible Objective Perturbation
-AMP-NT: Hyperparameter-free Flexible Objective Perturbation
+AMP: Approximate Minima Perturbation
+AMP-NT: Hyperparameter-free Approximate Minima Perturbation
 PSGD: Private Stochastic Gradient Descent
 PPSGD: Private Convex Perturbation-Based Stochastic Gradient Descent
 PPSSGD: Private Convex Perturbation-Based Stochastic Gradient Descent
@@ -105,7 +105,7 @@ adult, covertype, gisette, kddcup99, mnist, realsim, rcv1
 LR: Logistic Regression
 SVM: Huber SVM without kernel functions
 ```
-6. The results are stored in csvs in ''dpml-algorithms/results/rough_results''
+6. The results are stored in csv files in ''dpml-algorithms/results/rough_results''
 
 ### Draw the graphs
 
@@ -114,5 +114,5 @@ SVM: Huber SVM without kernel functions
 ```bash
 python draw.py [DATASET_NAME] [ALG_NAME] [MODEL_NAME]
 ```
-3. The graphs are in ''dpml-algorihtms/results/graphs''.
+3. The graphs are in ''dpml-algorithms/results/graphs''.
 
