@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+venv/
+logger.log
+statistics.py
+convergence_figs/
+res_fig/
+__old_codes__/
+mature_result/
+result_csvs/*.csv
+result_graphs/*.png
+result_csvs/
+result_graphs/
+results/
+machine_list
+gridsearch_serial.py
+datasets/data/
+datasets/data_cache/
+README.datasets
+README.algorithms
+tuning_result/

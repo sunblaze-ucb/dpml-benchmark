@@ -172,10 +172,25 @@ def private_frankwolfe(training_features, training_labels, eps, delta, hyper, mo
     progress_bar(len(counter)*100/total_configurations)
     return theta, hyper['L'], 0
 
+def create_directory(directory_name):
+    try:
+      os.stat(directory_name)
+    except:
+      os.mkdir(directory_name)
+
+
 def main():
 
     print("Starting...")
     np.seterr(over='ignore')
+
+    create_directory("./results")
+    create_directory("./results/rough_results")
+    create_directory("./results/rough_results/LR")
+    create_directory("./results/rough_results/SVM")
+    create_directory("./results/graphs")
+    create_directory("./results/graphs/LR")
+    create_directory("./results/graphs/SVM")
 
     if len(sys.argv)<4:
         print('Usage: python release.py <algorithm> <dataset> <loss=LR|SVM>')
