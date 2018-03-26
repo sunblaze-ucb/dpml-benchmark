@@ -4,11 +4,11 @@ A benchmark and implementations for differentially private convex optimization a
 
 The algorithms implemented in this repository are as follows:
 1. Approximate Minima Perturbation - An original algorithm proposed in our paper.
-2. Hyperparameter-free Approximate Minima Perturbation - Hyperparameter-free version of 1.
-3. Private Stochastic Gradient Descent in [scs13](http://ai2-s2-pdfs.s3.amazonaws.com/6154/ce8c02375184f7928e41c4fae532500f7175.pdf)
-4. Private Convex Perturbation-Based Stochastic Gradient Descent in [wlk17](https://arxiv.org/pdf/1606.04722.pdf)
-5. Private Strongly Convex Perturbation-Based Stochastic Gradient Descent in [wlk17](https://arxiv.org/pdf/1606.04722.pdf)
-6. Private Frank-Wolfe in [ttz16](https://arxiv.org/pdf/1411.5417.pdf)
+2. Hyperparameter-free Approximate Minima Perturbation - A hyperparameter-free version of Approximate Minima Perturbation.
+3. Private Stochastic Gradient Descent from [BST'14](https://arxiv.org/abs/1405.7085), [ACTMMTZ'16](https://arxiv.org/pdf/1607.00133.pdf)
+4. Private Convex Perturbation-Based Stochastic Gradient Descent from [WLKCJN'17](https://arxiv.org/pdf/1606.04722.pdf)
+5. Private Strongly Convex Perturbation-Based Stochastic Gradient Descent from [WLKCJN'17](https://arxiv.org/pdf/1606.04722.pdf)
+6. Private Frank-Wolfe from [TTZ'16](https://arxiv.org/pdf/1411.5417.pdf)
 
 ## Getting Started
 
@@ -92,7 +92,7 @@ AMP: Approximate Minima Perturbation
 AMP-NT: Hyperparameter-free Approximate Minima Perturbation
 PSGD: Private Stochastic Gradient Descent
 PPSGD: Private Convex Perturbation-Based Stochastic Gradient Descent
-PPSSGD: Private Convex Perturbation-Based Stochastic Gradient Descent
+PPSSGD: Private Strongly Convex Perturbation-Based Stochastic Gradient Descent
 FW: Private Frank-Wolfe
 ```
 
