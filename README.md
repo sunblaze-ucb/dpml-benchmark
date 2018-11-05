@@ -44,7 +44,7 @@ scipy==0.19.0
 scikit-learn==0.18.1
 six==1.10.0
 xlrd==1.0.0
-tensorflow=1.11.0
+tensorflow==1.11.0
 ```
 
 ### Installing
